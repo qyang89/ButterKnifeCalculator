@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="308dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <btnon
+        android:id="@+id/btn_zero"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="         0"
+        android:textAlignment="viewStart"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline_v2"
+        app:layout_constraintTop_toTopOf="@id/guideline_h4"
+        android:onClick="clickZero"/>
+
+    <btnon
+        android:id="@+id/btn_dot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="."
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v2"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v3"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h4"
+        android:onClick="clickDot"/>
+
+    <btnon
+        android:id="@+id/btn_equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="="
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h4"
+        android:onClick="clickEqual"/>
+
+    <btnon
+        android:id="@+id/btn_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="1"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h3"
+        android:onClick="clickOne"/>
+
+    <btnon
+        android:id="@+id/btn_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="2"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h4"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v1"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v2"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h3"
+        android:onClick="clickTwo"/>
+
+    <btnon
+        android:id="@+id/btn_three"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="3"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h4"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v2"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v3"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h3"
+        android:onClick="clickThree"/>
+
+    <btnon
+        android:id="@+id/btn_add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="+"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h4"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h3"
+        android:onClick="clickAdd"/>
+
+
+    <btnon
+        android:id="@+id/btn_four"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="4"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h2"
+        android:onClick="clickFour"/>
+
+    <btnon
+        android:id="@+id/btn_five"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="5"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h3"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v1"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v2"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h2"
+        android:onClick="clickFive"/>
+
+
+    <btnon
+        android:id="@+id/btn_six"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="6"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h3"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v2"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v3"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h2"
+        android:onClick="clickSix"/>
+
+    <btnon
+        android:id="@+id/btn_sub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="-"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h3"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h2"
+        android:onClick="clickSub"/>
+
+
+    <btnon
+        android:id="@+id/btn_seven"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="7"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v1"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h1"
+        android:onClick="clickSeven"/>
+
+    <btnon
+        android:id="@+id/btn_eight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="8"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h2"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v1"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v2"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h1"
+        android:onClick="clickEight"/>
+
+    <btnon
+        android:id="@+id/btn_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color10"
+        android:text="9"
+        android:textColor="@color/color8"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h2"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v2"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v3"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h1"
+        android:onClick="clickNine"/>
+
+    <btnon
+        android:id="@+id/btn_multiply"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="X"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h2"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h1"
+        android:onClick="clickMultiply"/>
+
+    <btnon
+        android:id="@+id/btn_clear"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="C"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="clickClear"/>
+
+
+    <btnon
+        android:id="@+id/btn_negate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="+/-"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h1"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v1"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="clickNegate"/>
+
+    <btnon
+        android:id="@+id/btn_percent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="%"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h1"
+        app:layout_constraintLeft_toLeftOf="@id/guideline_v2"
+        app:layout_constraintRight_toLeftOf="@id/guideline_v3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="clickPercent"/>
+
+    <btnon
+        android:id="@+id/btn_divide"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color9"
+        android:text="/"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h1"
+        app:layout_constraintLeft_toRightOf="@id/guideline_v3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="clickDivide"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
